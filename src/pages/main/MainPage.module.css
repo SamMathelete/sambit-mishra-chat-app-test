@@ -1,0 +1,7 @@
+.mainPage {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
