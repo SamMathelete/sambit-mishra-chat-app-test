@@ -1,0 +1,23 @@
+.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: 40rem;
+    width: auto;
+    flex-direction: row;
+}
+
+.chatsContainer {
+    background-color: #181818;
+    width: 31%;
+    border-radius: 0.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+}
+.messagesContainer {
+    background-color: #181818;
+    width: 65%;
+    border-radius: 0.5rem;
+}
