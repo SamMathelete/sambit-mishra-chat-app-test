@@ -4,20 +4,20 @@
     display: flex;
     flex-direction: row;
     background-color: transparent;
-    height: 40rem;
+    height: 90vh;
     width: auto;
     flex-direction: row;
 }
 
 .chatsContainer {
     background-color: #181818;
-    width: 31%;
+    width: 33%;
     border-radius: 0.5rem;
     margin-right: 1.5rem;
     margin-left: 1rem;
 }
 .messagesContainer {
     background-color: #181818;
-    width: 65%;
+    width: 63%;
     border-radius: 0.5rem;
 }
