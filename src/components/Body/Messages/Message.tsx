@@ -12,9 +12,6 @@ interface Props {
 }
 
 const Message: FC<Props> = ({ message, me, showImg, img, first }) => {
-  const globalShowImage = useAppSelector(
-    (state) => state.contacts.showChatImage
-  );
   return (
     <div
       className={`${styles.container} ${me && styles.meContainer} ${
@@ -22,7 +19,7 @@ const Message: FC<Props> = ({ message, me, showImg, img, first }) => {
       }`}
     >
       <div className={styles.imageHolder}>
-        {globalShowImage && showImg && (
+        {showImg && (
           <Image
             src={img}
             alt={me ? "me" : "sender"}
