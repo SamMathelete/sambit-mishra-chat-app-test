@@ -5,10 +5,14 @@ import userImage2 from "../../../../assets/userImage2.png";
 import { useAppSelector } from "@/store/hooks";
 
 const MessagesBox = () => {
-  const current = useAppSelector((state) => state.contacts.current);
-  const chats = useAppSelector(
-    (state) => state.contacts.contactList[current - 1].chats
+  const activeContactID = useAppSelector((state) => state.contacts.current);
+  const activeContactIndex = useAppSelector((state) =>
+    state.contacts.contactList.findIndex((ele) => ele.id === activeContactID)
   );
+  const activeContact = useAppSelector(
+    (state) => state.contacts.contactList[activeContactIndex]
+  );
+  const chats = activeContact.chats;
   return (
     <div className={styles.container}>
       {chats.map((chat) => (

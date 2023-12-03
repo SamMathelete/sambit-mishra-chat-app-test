@@ -1,6 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./Header.module.css";
 import { FC } from "react";
+import { useAppDispatch } from "@/store/hooks";
+import { contactsActions } from "@/store/contact-slice";
 
 interface Props {
   img: StaticImageData;
@@ -8,6 +10,16 @@ interface Props {
 }
 
 const MessagesHeader: FC<Props> = ({ img, name }) => {
+  const dispatch = useAppDispatch();
+
+  const backHandler = () => {
+    dispatch(contactsActions.back());
+  }
+
+  const deleteHandler = () => {
+    dispatch(contactsActions.delete());
+  } 
+
   return (
     <div className={styles.header}>
       <div className={styles.imageTextContainer}>
@@ -23,7 +35,7 @@ const MessagesHeader: FC<Props> = ({ img, name }) => {
         {name}
       </div>
       <div className={styles.buttonsContainer}>
-        <div className={styles.textButton}>
+        <div className={styles.textButton} onClick={backHandler}>
           <div className={styles.icon}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +59,7 @@ const MessagesHeader: FC<Props> = ({ img, name }) => {
           </div>
           <div className={styles.text}>Back</div>
         </div>
-        <div className={styles.textButton}>
+        <div className={styles.textButton} onClick={deleteHandler}>
           <div className={styles.icon}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

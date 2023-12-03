@@ -1,4 +1,4 @@
-import { LegacyRef, useRef } from "react";
+import { useRef } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import styles from "./Footer.module.css";
 import { contactsActions } from "@/store/contact-slice";
@@ -14,7 +14,19 @@ const MessagesFooter = () => {
         contactsActions.newChat({
           receiverID,
           message: messageRef.current.value,
+          me: true,
         })
+      );
+      setTimeout(
+        () =>
+          dispatch(
+            contactsActions.newChat({
+              receiverID,
+              message: "Hi There! This is a test reply!!",
+              me: false,
+            })
+          ),
+        1000
       );
       messageRef.current.value = "";
       messageRef.current.focus();

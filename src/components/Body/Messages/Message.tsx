@@ -1,7 +1,6 @@
 import { FC } from "react";
 import styles from "./Message.module.css";
 import Image, { StaticImageData } from "next/image";
-import { useAppSelector } from "@/store/hooks";
 
 interface Props {
   message: string;

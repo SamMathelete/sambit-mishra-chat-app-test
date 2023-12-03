@@ -1,12 +1,16 @@
 import MessagesHeader from "./Header";
-import userImage1 from "../../../../assets/userImage1.png";
 import MessagesFooter from "./Footer";
 import MessagesBox from "./MessagesBox";
 import { useAppSelector } from "@/store/hooks";
 
 const Messages = () => {
-  const activeContactState = useAppSelector((state) => state.contacts);
-  const activeContact = activeContactState.contactList[activeContactState.current - 1];
+  const activeContactID = useAppSelector((state) => state.contacts.current);
+  const activeContactIndex = useAppSelector((state) =>
+    state.contacts.contactList.findIndex((ele) => ele.id === activeContactID)
+  );
+  const activeContact = useAppSelector(
+    (state) => state.contacts.contactList[activeContactIndex]
+  );
   return (
     <div
       style={{
