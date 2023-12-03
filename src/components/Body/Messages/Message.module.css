@@ -1,10 +1,11 @@
 .container {
   display: flex;
-  width: 100%;
+  width: 98.44%;
   flex-direction: row;
   align-items: center;
   justify-content: left;
   background-color: transparent;
+  margin: 0.25rem;
 }
 
 .firstChild {
@@ -18,7 +19,7 @@
 
 .imageHolder {
   width: 5%;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .message {

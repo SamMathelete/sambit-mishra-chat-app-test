@@ -1,12 +1,37 @@
+import { LegacyRef, useRef } from "react";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import styles from "./Footer.module.css";
+import { contactsActions } from "@/store/contact-slice";
 
 const MessagesFooter = () => {
+  const receiverID = useAppSelector((state) => state.contacts.current);
+  const dispatch = useAppDispatch();
+  const messageRef = useRef<HTMLInputElement>(null);
+
+  const sendMessageHandler = () => {
+    if (messageRef.current && messageRef.current.value.length > 0) {
+      dispatch(
+        contactsActions.newChat({
+          receiverID,
+          message: messageRef.current.value,
+        })
+      );
+      messageRef.current.value = "";
+      messageRef.current.focus();
+    }
+    return;
+  };
+
   return (
     <div className={styles.footer}>
       <div className={styles.messageBoxContainer}>
-        <input className={styles.messageBox} placeholder="Message" />
+        <input
+          className={styles.messageBox}
+          ref={messageRef}
+          placeholder="Message"
+        />
       </div>
-      <div className={styles.sendButton}>
+      <div className={styles.sendButton} onClick={sendMessageHandler}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="26"

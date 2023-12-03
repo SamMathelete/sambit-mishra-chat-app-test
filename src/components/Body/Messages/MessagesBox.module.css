@@ -2,7 +2,8 @@
   display: flex;
   flex-flow: column nowrap;
   background-color: transparent;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 75%;
 }
 

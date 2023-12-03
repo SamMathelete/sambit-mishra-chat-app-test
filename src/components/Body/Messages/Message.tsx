@@ -1,6 +1,7 @@
 import { FC } from "react";
 import styles from "./Message.module.css";
 import Image, { StaticImageData } from "next/image";
+import { useAppSelector } from "@/store/hooks";
 
 interface Props {
   message: string;
@@ -11,10 +12,17 @@ interface Props {
 }
 
 const Message: FC<Props> = ({ message, me, showImg, img, first }) => {
+  const globalShowImage = useAppSelector(
+    (state) => state.contacts.showChatImage
+  );
   return (
-    <div className={`${styles.container} ${me && styles.meContainer} ${first && styles.firstChild}`}>
+    <div
+      className={`${styles.container} ${me && styles.meContainer} ${
+        first && styles.firstChild
+      }`}
+    >
       <div className={styles.imageHolder}>
-        {showImg && (
+        {globalShowImage && showImg && (
           <Image
             src={img}
             alt={me ? "me" : "sender"}

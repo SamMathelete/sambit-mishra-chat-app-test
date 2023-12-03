@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./Chats.module.css";
 import Image from "next/image";
 import showChats from "../../../../assets/showChats.png";
@@ -8,7 +7,8 @@ import { contactState } from "@/store/contact-slice";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 
 const Chats = () => {
-  const [selectedUser, setSelectedUser] = useState<number>(1);
+  const selectedUser = useAppSelector((state) => state.contacts.current);
+  const showChatImage = useAppSelector((state) => state.contacts.showChatImage);
   const contacts: contactState[] = useAppSelector(
     (state) => state.contacts.contactList
   );
@@ -17,14 +17,22 @@ const Chats = () => {
 
   const selectHandler = (id: number) => {
     dispatch(contactsActions.changeContact(id));
-    setSelectedUser(() => id);
+  };
+
+  const chatImageToggleHandler = () => {
+    dispatch(contactsActions.showChatImageToggle());
   };
 
   return (
     <>
       <div className={styles.upperContainer}>
         <div className={styles.text0}>ALL YOUR CHATS</div>
-        <div className={styles.showImageButton}>
+        <div
+          className={`${styles.showImageButton} ${
+            showChatImage ? styles.buttonON : ""
+          }`}
+          onClick={chatImageToggleHandler}
+        >
           <Image
             src={showChats}
             alt="chat images"
@@ -32,7 +40,7 @@ const Chats = () => {
               marginRight: "1rem",
             }}
           />
-          Chat Images: ON
+          Chat Images: {showChatImage ? "ON" : "OFF"}
         </div>
         <div className={styles.text1}>
           When a bot sends you images, you will be charged one secondary image
