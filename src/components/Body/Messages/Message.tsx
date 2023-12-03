@@ -7,11 +7,12 @@ interface Props {
   me: boolean;
   showImg: boolean;
   img: StaticImageData;
+  first: boolean;
 }
 
-const Message: FC<Props> = ({ message, me, showImg, img }) => {
+const Message: FC<Props> = ({ message, me, showImg, img, first }) => {
   return (
-    <div className={`${styles.container} ${me && styles.meContainer}`}>
+    <div className={`${styles.container} ${me && styles.meContainer} ${first && styles.firstChild}`}>
       <div className={styles.imageHolder}>
         {showImg && (
           <Image

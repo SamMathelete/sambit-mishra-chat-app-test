@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

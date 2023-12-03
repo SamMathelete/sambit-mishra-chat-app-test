@@ -7,6 +7,10 @@
   background-color: transparent;
 }
 
+.firstChild {
+  margin-top: auto !important;
+}
+
 .meContainer {
   justify-content: right;
   flex-direction: row-reverse;

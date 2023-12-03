@@ -1,13 +1,9 @@
 .container {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   background-color: transparent;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  justify-content: flex-end;
+  overflow: auto;
   height: 75%;
 }
 
-.container::-webkit-scrollbar {
-  display: none;
-}
+
