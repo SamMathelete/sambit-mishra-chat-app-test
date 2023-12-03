@@ -3,10 +3,22 @@ import styles from "./Chats.module.css";
 import Image from "next/image";
 import showChats from "../../../../assets/showChats.png";
 import IconChatButton from "./IconChatButton";
-import userImage1 from "../../../../assets/userImage1.png";
+import { contactsActions } from "@/store/contact-slice";
+import { contactState } from "@/store/contact-slice";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
 
 const Chats = () => {
   const [selectedUser, setSelectedUser] = useState<number>(1);
+  const contacts: contactState[] = useAppSelector(
+    (state) => state.contacts.contactList
+  );
+
+  const dispatch = useAppDispatch();
+
+  const selectHandler = (id: number) => {
+    dispatch(contactsActions.changeContact(id));
+    setSelectedUser(() => id);
+  };
 
   return (
     <>
@@ -26,22 +38,17 @@ const Chats = () => {
           When a bot sends you images, you will be charged one secondary image
         </div>
         <div className={styles.chatButtons}>
-          <IconChatButton
-            name="Caressa Jessalin"
-            img={userImage1}
-            imgAlt="user1"
-            lastChat="Lorem ipsum dolor sit amet abcd efgh"
-            selected={selectedUser === 1}
-            onClick={() => setSelectedUser(() => 1)}
-          />
-          <IconChatButton
-            name="Letty Bride"
-            img={userImage1}
-            imgAlt="user2"
-            lastChat="Lorem ipsum dolor sit amet abcd efgh"
-            selected={selectedUser === 2}
-            onClick={() => setSelectedUser(() => 2)}
-          />
+          {contacts.map((contact) => (
+            <IconChatButton
+              key={contact.id}
+              name={contact.name}
+              img={contact.img}
+              imgAlt={contact.name}
+              lastChat="Lorem ipsum dolor sit amet abcd efgh"
+              selected={selectedUser === contact.id}
+              onClick={selectHandler.bind(this, contact.id)}
+            />
+          ))}
         </div>
       </div>
       <div className={styles.hbar} />

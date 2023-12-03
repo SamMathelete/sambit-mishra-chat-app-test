@@ -9,6 +9,7 @@ const MessagesBox = () => {
     <div className={styles.container}>
       {chats.map((chat) => (
         <Message
+          key={chat.id}
           message={chat.message}
           me={chat.me}
           img={chat.me ? userImage2 : userImage1}

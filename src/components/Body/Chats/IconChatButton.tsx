@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import { MouseEventHandler } from "react";
 import styles from "./IconChatButton.module.css";
 import { FC } from "react";
 
@@ -8,7 +9,7 @@ interface Props {
   name: string;
   lastChat: string;
   selected: boolean;
-  onClick: () => void;
+  onClick: MouseEventHandler<HTMLDivElement>;
 }
 
 const IconChatButton: FC<Props> = ({ img, imgAlt, name, lastChat, selected, onClick }) => {
