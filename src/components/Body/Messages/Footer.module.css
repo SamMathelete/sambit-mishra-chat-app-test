@@ -4,14 +4,13 @@
   padding: 1rem 1.5rem;
   justify-content: space-between;
   align-items: center;
-  bottom: -2.5rem;
   position: absolute;
   width: 57%;
 }
 
 .messageBoxContainer {
   display: flex;
-  width: 94%;
+  width: 92%;
 }
 
 .messageBox {

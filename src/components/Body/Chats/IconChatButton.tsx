@@ -22,8 +22,6 @@ const IconChatButton: FC<Props> = ({ img, imgAlt, name, lastChat, selected, onCl
           src={img}
           alt={imgAlt}
           style={{
-            width: "100%",
-            height: "100%",
             borderRadius: "50%",
           }}
         />

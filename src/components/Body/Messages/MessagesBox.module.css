@@ -1,8 +1,11 @@
 .container {
   display: flex;
+  flex-direction: column;
   background-color: transparent;
   overflow-y: scroll;
   scrollbar-width: none;
+  justify-content: flex-end;
+  height: 75%;
 }
 
 .container::-webkit-scrollbar {

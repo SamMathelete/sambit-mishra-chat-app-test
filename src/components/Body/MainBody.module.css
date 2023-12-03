@@ -18,7 +18,9 @@
     padding: 2rem;
     overflow: hidden;
 }
+
 .messagesContainer {
+    display: flex;
     background-color: #181818;
     width: 63%;
     border-radius: 0.5rem;

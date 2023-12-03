@@ -8,7 +8,6 @@ const Messages = () => {
     <div
       style={{
         width: "100%",
-        height: "100%",
       }}
     >
       <MessagesHeader img={userImage1} name="Caressa Jesalin" />
