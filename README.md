@@ -10,7 +10,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<div style="display:flex; flex-direction:row; flex-wrap:wrap">
+<div style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between;">
 <img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21347&amp;authkey=%21AKZ4zjTC8DlrmmI&amp;width=2868&amp;height=1638" alt="project-screenshot" width="500" height="400/">
 
 <img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21346&amp;authkey=%21AHprldcENqEEbA8&amp;width=2880&amp;height=1630" alt="project-screenshot" width="500" height="400/">
