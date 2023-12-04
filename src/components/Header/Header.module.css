@@ -12,7 +12,7 @@
 
 .div1 {
   display: flex;
-  width: 60%;
+  width: 80%;
   flex-direction: row;
   align-items: center;
 }
@@ -26,7 +26,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
-  margin-right: 3rem
+  margin-right: 3rem;
 }
 
 .vbar {
@@ -55,6 +55,7 @@
 .loginButton {
   display: flex;
   width: 13%;
+  min-width: 10rem;
   height: 2.9375rem;
   padding: 0.9375rem 2.5rem 1.25rem 2.5rem;
   justify-content: center;
@@ -69,4 +70,16 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 1.35rem */
+}
+
+@media (max-width: 1000px) {
+  .iconText {
+    display: none;
+  }
+  .vbar {
+    display: none;
+  }
+  .loginButton {
+    font-size: 1rem;
+  }
 }

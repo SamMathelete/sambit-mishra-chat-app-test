@@ -10,28 +10,29 @@ const Footer = () => {
       <div className={styles.logo}>Logo</div>
       <div className={styles.div2}>
         <div className={styles.contact}>Contact@00000000.tech</div>
-
-        <Image
-          src={telegram}
-          alt="Telegram"
-          style={{
-            marginRight: "2rem",
-          }}
-        />
-        <Image
-          src={instagram}
-          alt="Instagram"
-          style={{
-            marginRight: "2rem",
-          }}
-        />
-        <Image
-          src={x}
-          alt="X"
-          style={{
-            marginRight: "2rem",
-          }}
-        />
+        <div className={styles.social}>
+          <Image
+            src={telegram}
+            alt="Telegram"
+            style={{
+              marginRight: "2rem",
+            }}
+          />
+          <Image
+            src={instagram}
+            alt="Instagram"
+            style={{
+              marginRight: "2rem",
+            }}
+          />
+          <Image
+            src={x}
+            alt="X"
+            style={{
+              marginRight: "2rem",
+            }}
+          />
+        </div>
       </div>
     </footer>
   );

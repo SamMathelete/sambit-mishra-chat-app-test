@@ -25,6 +25,7 @@
   width: 30%;
   justify-content: flex-end;
   flex-direction: row;
+  align-items: center;
 }
 
 .contact {
@@ -35,4 +36,41 @@
   font-weight: 400;
   line-height: 130%;
   margin-right: 2rem;
+}
+
+.social {
+  display: flex;
+  width: 40%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    margin-top: 2rem;
+    font-size: 1.875rem;
+    width: 100%;
+    text-align: center;
+  }
+  .contact {
+    margin-right: 1.5rem;
+    font-size: 1rem;
+  }
+  .div2 {
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social {
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+  }
 }
