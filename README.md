@@ -10,18 +10,18 @@
 
 <h2>Project Screenshots:</h2>
 
-<div style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between;">
-<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21347&amp;authkey=%21AKZ4zjTC8DlrmmI&amp;width=2868&amp;height=1638" alt="project-screenshot" width="500" height="400/">
+<div style="display:flex; flex-direction:row; flex-wrap:wrap;">
+<img style="margin:1rem;" src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21347&amp;authkey=%21AKZ4zjTC8DlrmmI&amp;width=2868&amp;height=1638" alt="project-screenshot" width="500" height="400/">
 
-<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21346&amp;authkey=%21AHprldcENqEEbA8&amp;width=2880&amp;height=1630" alt="project-screenshot" width="500" height="400/">
+<img style="margin:1rem;" src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21346&amp;authkey=%21AHprldcENqEEbA8&amp;width=2880&amp;height=1630" alt="project-screenshot" width="500" height="400/">
 
-<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21348&amp;authkey=%21AP9BDZ-N4bYItss&amp;width=804&amp;height=1394" alt="project-screenshot" width="200" height="400/">
+<img style="margin:1rem;" src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21348&amp;authkey=%21AP9BDZ-N4bYItss&amp;width=804&amp;height=1394" alt="project-screenshot" width="200" height="400/">
 
-<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21349&amp;authkey=%21AJce5op4q7UO0Ag&amp;width=798&amp;height=1396" alt="project-screenshot" width="200" height="400/">
+<img style="margin:1rem;" src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21349&amp;authkey=%21AJce5op4q7UO0Ag&amp;width=798&amp;height=1396" alt="project-screenshot" width="200" height="400/">
 
-<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21350&amp;authkey=%21ADR98axbhgyKEqw&amp;width=802&amp;height=1392" alt="project-screenshot" width="200" height="400/">
+<img style="margin:1rem;" src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21350&amp;authkey=%21ADR98axbhgyKEqw&amp;width=802&amp;height=1392" alt="project-screenshot" width="200" height="400/">
 
-<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21351&amp;authkey=!AOLauyZbR_Tx7BA" alt="project-screenshot" width="200" height="400/">
+<img style="margin:1rem;" src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21351&amp;authkey=!AOLauyZbR_Tx7BA" alt="project-screenshot" width="200" height="400/">
 </div>
   
   
