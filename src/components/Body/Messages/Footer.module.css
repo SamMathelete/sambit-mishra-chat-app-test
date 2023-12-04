@@ -41,15 +41,19 @@
 
 @media (max-width: 1000px) {
   .footer {
-    width: 91%;
+    width: 88vw;
+    padding: 1rem 1rem;
+    position: relative;
     background-color: #181818;
     border-radius: 0.5rem;
+    justify-content: center;
   }
   .messageBoxContainer {
-    width: 85%;
+    width: 100%;
     margin-right: 0.5rem;
   }
   .messageBox {
+    width: 100%;
     padding: 0.95rem 2rem;
   }
 }
