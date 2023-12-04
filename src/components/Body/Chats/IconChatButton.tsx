@@ -13,7 +13,7 @@ interface Props {
 }
 
 const IconChatButton: FC<Props> = ({ img, imgAlt, name, lastChat, selected, onClick }) => {
-  const showableLength = lastChat.length > 20 ? 20 : lastChat.length;
+  const showableLength = lastChat.length > 50 ? 50 : lastChat.length;
   const contChat = showableLength < lastChat.length ? "..." : "";
 
   return (

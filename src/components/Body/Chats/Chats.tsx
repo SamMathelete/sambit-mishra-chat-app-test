@@ -3,13 +3,14 @@ import Image from "next/image";
 import showChats from "../../../../assets/showChats.png";
 import IconChatButton from "./IconChatButton";
 import { contactsActions } from "@/store/contact-slice";
-import { contactState } from "@/store/contact-slice";
+import { modContactsState } from "@/store/contact-slice";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { modalActions } from "@/store/modal-slice";
 
 const Chats = () => {
   const selectedUser = useAppSelector((state) => state.contacts.current);
   const showChatImage = useAppSelector((state) => state.contacts.showChatImage);
-  const contacts: contactState[] = useAppSelector(
+  const contacts: modContactsState[] = useAppSelector(
     (state) => state.contacts.contactList
   );
 
@@ -21,6 +22,17 @@ const Chats = () => {
 
   const chatImageToggleHandler = () => {
     dispatch(contactsActions.showChatImageToggle());
+  };
+
+  const createHandler = () => {
+    dispatch(modalActions.toggleModal());
+  };
+
+  const findLastChat = (id: number) => {
+    const contactIndex = contacts.findIndex((ele) => ele.id === id);
+    const contactChatsLength = contacts[contactIndex].chats.length;
+    const lastChat = contacts[contactIndex].chats[contactChatsLength - 1];
+    return `${lastChat.me ? "You: " : ""} ${lastChat.message}`;
   };
 
   return (
@@ -52,7 +64,7 @@ const Chats = () => {
               name={contact.name}
               img={contact.img}
               imgAlt={contact.name}
-              lastChat="Lorem ipsum dolor sit amet abcd efgh"
+              lastChat={findLastChat(contact.id)}
               selected={selectedUser === contact.id}
               onClick={selectHandler.bind(this, contact.id)}
             />
@@ -60,7 +72,7 @@ const Chats = () => {
         </div>
       </div>
       <div className={styles.hbar} />
-      <div className={styles.lowerContainer}>
+      <div className={styles.lowerContainer} onClick={createHandler}>
         <div className={styles.plusButton}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

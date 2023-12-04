@@ -9,7 +9,7 @@ export interface contactState {
   id: number;
 }
 
-interface modContactsState extends contactState {
+export interface modContactsState extends contactState {
   chats: Chat[];
 }
 
@@ -50,8 +50,13 @@ const contactsSlice = createSlice({
   name: "contacts",
   initialState,
   reducers: {
-    addContact: (state, action: PayloadAction<contactState>) => {
-      state.contactList.push({ ...action.payload, chats });
+    addContact: (state, action: PayloadAction<string>) => {
+      state.contactList.push({
+        name: action.payload,
+        img: userImage1,
+        id: state.contactList.length + 1,
+        chats,
+      });
     },
     changeContact: (state, action: PayloadAction<number>) => {
       state.lastOnes.push(state.current);

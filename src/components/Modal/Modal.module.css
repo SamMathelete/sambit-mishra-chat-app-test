@@ -1,0 +1,103 @@
+.backdrop {
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1b;
+  opacity: 0.99;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: #050505;
+  width: 70vh;
+  height: 33vh;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.modalHead {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #2f2f2f;
+  padding: 2rem;
+  color: #f3ae9f;
+  font-family: Poppins;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.lowerCover {
+  display: flex;
+  width: 100%;
+  padding: 1rem 2rem;
+  flex-direction: column;
+}
+
+.inputLabel {
+  color: #fff;
+  font-family: "Open Sans";
+  margin: 0.25rem 1rem;
+  font-size: 1rem;
+}
+
+.nameInput {
+  display: flex;
+  text-wrap: wrap;
+  background-color: #2f2f2f;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20rem;
+  align-items: center;
+  width: 100%;
+  color: var(--Pra, #7f8781);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+}
+
+.controls {
+  margin-top: 2.25rem;
+  padding: 0rem 0.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cancelButton {
+  background-color: transparent;
+  border-radius: 10px;
+  border-width: 0.1rem;
+  border-color: #d64f4f;
+  padding: 0.5rem 1.5rem;
+  color: #d64f4f;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+}
+
+.submitButton {
+  background-color: rgb(0, 132, 255);
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+}
