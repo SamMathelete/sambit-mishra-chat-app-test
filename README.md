@@ -43,7 +43,14 @@ Here're some of the project's best features:
 git clone "https://github.com/SamMathelete/sambit-mishra-chat-app-test.git"
 ```
 
-<p>2. Install Dependencies using NPM</p>
+<p>2. Move to Working Directory</p>
+
+
+```bash
+cd sambit-mishra-chat-app-test
+```
+
+<p>3. Install Dependencies using NPM</p>
 
 ```bash
 npm install
