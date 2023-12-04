@@ -44,6 +44,10 @@
   line-height: 70%;
 }
 
+.showImageButton:hover {
+  opacity: 0.8;
+}
+
 .buttonON {
   background-color: #f3ae9f;
 }
@@ -76,6 +80,13 @@
   margin: 0.75rem 0;
   padding: 1rem 0;
   width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  align-items: center;
+}
+
+.lowerContainer:hover {
+  background-color: #2f2f2f;
 }
 
 .plusButton {

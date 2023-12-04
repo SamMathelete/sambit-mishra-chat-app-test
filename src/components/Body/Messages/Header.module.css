@@ -38,6 +38,10 @@
   margin: 0 0.5rem;
 }
 
+.textButton:hover {
+  opacity: 0.6;
+}
+
 .icon {
   margin: 0 0.5rem;
   display: flex;

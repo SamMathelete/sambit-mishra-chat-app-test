@@ -30,6 +30,10 @@
   line-height: 150%; /* 1.5rem */
 }
 
+.messageBox:hover {
+  opacity: 0.8;
+}
+
 .sendButton {
   display: flex;
   align-items: center;
@@ -37,6 +41,10 @@
   padding: 0.7rem;
   border-radius: 50%;
   background-color: #f3ae9f;
+}
+
+.sendButton:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 1000px) {

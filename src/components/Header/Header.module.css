@@ -58,6 +58,10 @@
   color: #f3ae9f;
 }
 
+.iconText:hover {
+  color: #f3ae9f;
+}
+
 .loginButton {
   display: flex;
   width: 13%;
@@ -76,6 +80,10 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 1.35rem */
+}
+
+.loginButton:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 1000px) {
