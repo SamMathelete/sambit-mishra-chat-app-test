@@ -10,6 +10,12 @@
   justify-content: space-between;
 }
 
+.menuBtn {
+  display: none;
+  margin: 1rem 1rem;
+  margin-left: 0;
+}
+
 .div1 {
   display: flex;
   width: 80%;
@@ -75,6 +81,9 @@
 @media (max-width: 1000px) {
   .iconText {
     display: none;
+  }
+  .menuBtn {
+    display: flex;
   }
   .vbar {
     display: none;

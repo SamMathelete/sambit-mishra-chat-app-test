@@ -42,8 +42,7 @@
 
   .messagesContainer {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     margin-bottom: 3rem;
-    overflow: visible;
   }
 }

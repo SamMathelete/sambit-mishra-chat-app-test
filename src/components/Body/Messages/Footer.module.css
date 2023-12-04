@@ -41,7 +41,7 @@
 
 @media (max-width: 1000px) {
   .footer {
-    width: 88vw;
+    width: 100%;
     padding: 1rem 1rem;
     position: relative;
     background-color: #181818;

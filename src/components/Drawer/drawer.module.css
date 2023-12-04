@@ -1,0 +1,49 @@
+.backdrop {
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #1b1b1b;
+  opacity: 0.99;
+}
+
+.drawer {
+  z-index: 200;
+  width: 65%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  padding: 2rem;
+  background-color: #050505;
+  flex-direction: column;
+}
+
+.closeButton {
+  margin: 1rem 1rem;
+}
+
+.controls {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.iconText {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Open Sans;
+  font-size: 1.34431rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70%;
+  margin: 2rem 0;
+}
+
+.selected {
+  color: #f3ae9f;
+}
