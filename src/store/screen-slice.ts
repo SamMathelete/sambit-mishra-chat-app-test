@@ -9,12 +9,14 @@ interface Screen {
   Dimensions: Dimensions;
   showChat: boolean;
   showMessage: boolean;
+  lastState: boolean;
 }
 
 const initialState: Screen = {
   Dimensions: { width: 0, height: 0 },
   showChat: true,
   showMessage: true,
+  lastState: true,
 };
 
 const screenSlice = createSlice({
@@ -35,6 +37,9 @@ const screenSlice = createSlice({
     },
     hideMessageScreen: (state) => {
       state.showMessage = false;
+    },
+    toggleLastState: (state) => {
+      state.lastState = !state.lastState;
     },
   },
 });

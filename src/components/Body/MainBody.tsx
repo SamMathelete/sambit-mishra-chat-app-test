@@ -9,6 +9,7 @@ const MainBody = () => {
   const screenSize = useAppSelector((state) => state.screen.Dimensions);
   const showChat = useAppSelector((state) => state.screen.showChat);
   const showMessage = useAppSelector((state) => state.screen.showMessage);
+  const lastState = useAppSelector((state) => state.screen.lastState);
 
   const dispatch = useAppDispatch();
 
@@ -28,8 +29,13 @@ const MainBody = () => {
     const currentSize = getScreenDimensions();
     dispatch(screenActions.changeScreenSize(currentSize));
     if (currentSize.width < 1000) {
-      dispatch(screenActions.hideMessageScreen());
-      dispatch(screenActions.showChatScreen());
+      if (lastState) {
+        dispatch(screenActions.hideMessageScreen());
+        dispatch(screenActions.showChatScreen());
+      } else {
+        dispatch(screenActions.showMessageScreen());
+        dispatch(screenActions.hideChatScreen());
+      }
     }
   }, []);
 
@@ -38,8 +44,13 @@ const MainBody = () => {
       const currentSize = getScreenDimensions();
       dispatch(screenActions.changeScreenSize(currentSize));
       if (currentSize.width < 1000) {
-        dispatch(screenActions.hideMessageScreen());
-        dispatch(screenActions.showChatScreen());
+        if (lastState) {
+          dispatch(screenActions.hideMessageScreen());
+          dispatch(screenActions.showChatScreen());
+        } else {
+          dispatch(screenActions.showMessageScreen());
+          dispatch(screenActions.hideChatScreen());
+        }
       } else {
         dispatch(screenActions.showMessageScreen());
         dispatch(screenActions.showChatScreen());

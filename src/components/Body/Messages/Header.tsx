@@ -27,6 +27,7 @@ const MessagesHeader: FC<Props> = ({ img, name }) => {
   };
 
   const backToChatHandler = () => {
+    dispatch(screenActions.toggleLastState());
     dispatch(screenActions.hideMessageScreen());
     dispatch(screenActions.showChatScreen());
   };

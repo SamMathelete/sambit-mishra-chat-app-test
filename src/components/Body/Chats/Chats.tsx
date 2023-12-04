@@ -21,6 +21,7 @@ const Chats = () => {
   const selectHandler = (id: number) => {
     dispatch(contactsActions.changeContact(id));
     if (screenSize.width < 1000) {
+      dispatch(screenActions.toggleLastState());
       dispatch(screenActions.showMessageScreen());
       dispatch(screenActions.hideChatScreen());
     }
