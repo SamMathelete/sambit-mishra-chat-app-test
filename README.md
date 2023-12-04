@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://socialify.git.ci/SamMathelete/sambit-mishra-chat-app-test/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
-<p id="description">This project is made as a submission for FSD Intern Task 1 for Arcsys Labs. This demonstrates the front end of a Chat App.</p>
+<p id="description">This project is made as a submission for FSD Intern Task 1 for Arcsys Labs. This demonstrates the front end of a Chat App. Technologies used are NextJS, TypeScript and ReduxJS. ReduxJS is used for the central state management.</p>
 
 <h2>🚀 Demo</h2>
 
@@ -38,19 +38,20 @@ Here're some of the project's best features:
 
 <p>1. Clone The Repository</p>
 
-```
+
+```bash
 git clone "https://github.com/SamMathelete/sambit-mishra-chat-app-test.git"
 ```
 
 <p>2. Install Dependencies using NPM</p>
 
-```
+```bash
 npm install
 ```
 
 <p>3. Run a Development Build</p>
 
-```
+```bash
 npm run dev
 ```
 
@@ -67,10 +68,7 @@ Technologies used in the project:
 - Next JS
 - React JS
 - Redux JS
-
-<h2>🛡️ License:</h2>
-
-This project is licensed under the
+- TypeScript
 
 <h2>💖Like my work?</h2>
 
