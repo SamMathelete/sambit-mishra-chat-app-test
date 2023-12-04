@@ -10,6 +10,7 @@
 
 <h2>Project Screenshots:</h2>
 
+<div style="display:flex; flex-direction:row; flex-wrap:wrap">
 <img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21347&amp;authkey=%21AKZ4zjTC8DlrmmI&amp;width=2868&amp;height=1638" alt="project-screenshot" width="500" height="400/">
 
 <img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21346&amp;authkey=%21AHprldcENqEEbA8&amp;width=2880&amp;height=1630" alt="project-screenshot" width="500" height="400/">
@@ -21,17 +22,17 @@
 <img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21350&amp;authkey=%21ADR98axbhgyKEqw&amp;width=802&amp;height=1392" alt="project-screenshot" width="200" height="400/">
 
 <img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21351&amp;authkey=!AOLauyZbR_Tx7BA" alt="project-screenshot" width="200" height="400/">
-
+</div>
   
   
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
 
-*   Chat Simulation
-*   Adding new bots
-*   Responsive Frontend
-*   Polished UI
+- Chat Simulation
+- Adding new bots
+- Responsive Frontend
+- Polished UI
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -59,15 +60,13 @@ npm run dev
 http://localhost:3000
 ```
 
-  
-  
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
 
-*   Next JS
-*   React JS
-*   Redux JS
+- Next JS
+- React JS
+- Redux JS
 
 <h2>🛡️ License:</h2>
 
