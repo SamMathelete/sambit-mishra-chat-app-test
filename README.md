@@ -56,13 +56,13 @@ cd sambit-mishra-chat-app-test
 npm install
 ```
 
-<p>3. Run a Development Build</p>
+<p>4. Run a Development Build</p>
 
 ```bash
 npm run dev
 ```
 
-<p>4. On a browser visit this page to view the project in action</p>
+<p>5. On a browser visit this page to view the project in action</p>
 
 ```
 http://localhost:3000
