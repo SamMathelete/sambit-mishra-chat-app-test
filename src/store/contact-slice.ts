@@ -51,10 +51,11 @@ const contactsSlice = createSlice({
   initialState,
   reducers: {
     addContact: (state, action: PayloadAction<string>) => {
+      const newID = state.contactList[state.contactList.length - 1].id + 1;
       state.contactList.push({
         name: action.payload,
         img: userImage1,
-        id: state.contactList.length + 1,
+        id: newID,
         chats,
       });
     },
