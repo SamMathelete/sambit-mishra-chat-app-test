@@ -18,8 +18,15 @@
 }
 
 .imageHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
   width: 5%;
   margin: 0.5rem;
+}
+
+.meImageHolder {
+  justify-content: left;
 }
 
 .message {
@@ -48,4 +55,18 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0rem 1rem;
+  }
+  .message {
+    max-width: 15rem;
+    padding: 0.5rem;
+  }
+  .imageHolder {
+    width: 5%;
+    
+  }
 }

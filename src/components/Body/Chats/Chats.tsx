@@ -6,6 +6,7 @@ import { contactsActions } from "@/store/contact-slice";
 import { modContactsState } from "@/store/contact-slice";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { modalActions } from "@/store/modal-slice";
+import { screenActions } from "@/store/screen-slice";
 
 const Chats = () => {
   const selectedUser = useAppSelector((state) => state.contacts.current);
@@ -13,11 +14,16 @@ const Chats = () => {
   const contacts: modContactsState[] = useAppSelector(
     (state) => state.contacts.contactList
   );
+  const screenSize = useAppSelector((state) => state.screen.Dimensions);
 
   const dispatch = useAppDispatch();
 
   const selectHandler = (id: number) => {
     dispatch(contactsActions.changeContact(id));
+    if (screenSize.width < 1000) {
+      dispatch(screenActions.showMessageScreen());
+      dispatch(screenActions.hideChatScreen());
+    }
   };
 
   const chatImageToggleHandler = () => {
@@ -36,7 +42,7 @@ const Chats = () => {
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.upperContainer}>
         <div className={styles.text0}>ALL YOUR CHATS</div>
         <div
@@ -89,7 +95,7 @@ const Chats = () => {
         </div>
         <div className={styles.text2}>Create new bot</div>
       </div>
-    </>
+    </div>
   );
 };
 

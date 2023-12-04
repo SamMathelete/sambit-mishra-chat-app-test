@@ -1,8 +1,9 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./Header.module.css";
 import { FC } from "react";
-import { useAppDispatch } from "@/store/hooks";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { contactsActions } from "@/store/contact-slice";
+import { screenActions } from "@/store/screen-slice";
 
 interface Props {
   img: StaticImageData;
@@ -11,17 +12,41 @@ interface Props {
 
 const MessagesHeader: FC<Props> = ({ img, name }) => {
   const dispatch = useAppDispatch();
+  const screenSize = useAppSelector((state) => state.screen.Dimensions);
 
   const backHandler = () => {
     dispatch(contactsActions.back());
-  }
+  };
 
   const deleteHandler = () => {
     dispatch(contactsActions.delete());
-  } 
+    if (screenSize.width < 1000) {
+      dispatch(screenActions.hideMessageScreen());
+      dispatch(screenActions.showChatScreen());
+    }
+  };
+
+  const backToChatHandler = () => {
+    dispatch(screenActions.hideMessageScreen());
+    dispatch(screenActions.showChatScreen());
+  };
 
   return (
     <div className={styles.header}>
+      <div className={styles.backToChat} onClick={backToChatHandler}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="20"
+          viewBox="0 0 18 30"
+          fill="none"
+        >
+          <path
+            d="M17.625 3.53594L14.723 0.625L0.375 15L14.723 29.375L17.625 26.4641L6.18789 15L17.625 3.53594Z"
+            fill="white"
+          />
+        </svg>
+      </div>
       <div className={styles.imageTextContainer}>
         <Image
           src={img}

@@ -57,3 +57,30 @@
   justify-content: center;
   align-items: center;
 }
+
+.backToChat {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .backToChat {
+    display: flex;
+  }
+  .header {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  .textButton {
+    flex-direction: column;
+    margin: 0;
+  }
+  .buttonsContainer {
+    width: 45%;
+  }
+  .text {
+    display: none;
+  }
+}

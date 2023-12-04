@@ -38,3 +38,16 @@
   border-radius: 50%;
   background-color: #f3ae9f;
 }
+
+@media (max-width: 1000px) {
+  .footer {
+    width: 91%;
+  }
+  .messageBoxContainer {
+    width: 85%;
+    margin-right: 0.5rem;
+  }
+  .messageBox {
+    padding: 0.95rem 2rem;
+  }
+}

@@ -13,11 +13,13 @@ interface Props {
 const Message: FC<Props> = ({ message, me, showImg, img, first }) => {
   return (
     <div
-      className={`${styles.container} ${me && styles.meContainer} ${
+      className={`${styles.container} ${me ? styles.meContainer : ""} ${
         first && styles.firstChild
       }`}
     >
-      <div className={styles.imageHolder}>
+      <div
+        className={`${styles.imageHolder} ${me ? styles.meImageHolder : ""}`}
+      >
         {showImg && (
           <Image
             src={img}
