@@ -110,4 +110,7 @@
   .showImageButton {
     font-size: 1rem;
   }
+  .lowerContainer {
+    padding: 0.5rem;
+  }
 }
