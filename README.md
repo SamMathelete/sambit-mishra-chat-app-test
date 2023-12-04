@@ -1,40 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center" id="title">Chat App Frontend - FSD Intern Task 1</h1>
 
-## Getting Started
+<p align="center"><img src="https://socialify.git.ci/SamMathelete/sambit-mishra-chat-app-test/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
-First, run the development server:
+<p id="description">This project is made as a submission for FSD Intern Task 1 for Arcsys Labs. This demonstrates the front end of a Chat App.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<h2>🚀 Demo</h2>
+
+[https://chatsambitmishra.vercel.app](https://chatsambitmishra.vercel.app)
+
+<h2>Project Screenshots:</h2>
+
+<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21347&amp;authkey=%21AKZ4zjTC8DlrmmI&amp;width=2868&amp;height=1638" alt="project-screenshot" width="500" height="400/">
+
+<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21346&amp;authkey=%21AHprldcENqEEbA8&amp;width=2880&amp;height=1630" alt="project-screenshot" width="500" height="400/">
+
+<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21348&amp;authkey=%21AP9BDZ-N4bYItss&amp;width=804&amp;height=1394" alt="project-screenshot" width="200" height="400/">
+
+<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21349&amp;authkey=%21AJce5op4q7UO0Ag&amp;width=798&amp;height=1396" alt="project-screenshot" width="200" height="400/">
+
+<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21350&amp;authkey=%21ADR98axbhgyKEqw&amp;width=802&amp;height=1392" alt="project-screenshot" width="200" height="400/">
+
+<img src="https://onedrive.live.com/embed?resid=8C5672ABDF4735B1%21351&amp;authkey=!AOLauyZbR_Tx7BA" alt="project-screenshot" width="200" height="400/">
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Chat Simulation
+*   Adding new bots
+*   Responsive Frontend
+*   Polished UI
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone The Repository</p>
+
+```
+git clone "https://github.com/SamMathelete/sambit-mishra-chat-app-test.git"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>2. Install Dependencies using NPM</p>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<p>3. Run a Development Build</p>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<p>4. On a browser visit this page to view the project in action</p>
 
-## Learn More
+```
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+  
+  
+<h2>💻 Built with</h2>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Technologies used in the project:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+*   Next JS
+*   React JS
+*   Redux JS
 
-## Deploy on Vercel
+<h2>🛡️ License:</h2>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h2>💖Like my work?</h2>
+
+For further details and troubleshooting write a mail to sambit.mishra.2003@outlook.com
