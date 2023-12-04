@@ -51,6 +51,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10rem;
   }
   .logo {
     margin-top: 2rem;

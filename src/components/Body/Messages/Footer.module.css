@@ -42,6 +42,8 @@
 @media (max-width: 1000px) {
   .footer {
     width: 91%;
+    background-color: #181818;
+    border-radius: 0.5rem;
   }
   .messageBoxContainer {
     width: 85%;
